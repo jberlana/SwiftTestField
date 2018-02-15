@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="ReuseMovieCollectionViewCell" reuseIdentifier="ReuseMovieCollectionViewCell" id="SBJ-fU-D6O" customClass="MovieCollectionViewCell" customModule="CleanSwift" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="150" height="182"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                <rect key="frame" x="0.0" y="0.0" width="150" height="182"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dWU-gI-x4v">
+                        <rect key="frame" x="0.0" y="0.0" width="150" height="182"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D0N-27-PVb">
+                                <rect key="frame" x="10" y="81" width="131" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.95881325750000002" blue="0.77179005349999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="D0N-27-PVb" firstAttribute="leading" secondItem="dWU-gI-x4v" secondAttribute="leading" constant="10" id="2nA-T2-w4s"/>
+                            <constraint firstAttribute="trailing" secondItem="D0N-27-PVb" secondAttribute="trailing" constant="9" id="cMj-b2-qYy"/>
+                            <constraint firstItem="D0N-27-PVb" firstAttribute="centerY" secondItem="dWU-gI-x4v" secondAttribute="centerY" id="u9r-KA-9A3"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="dWU-gI-x4v" firstAttribute="top" secondItem="SBJ-fU-D6O" secondAttribute="top" id="6ju-Ea-YWm"/>
+                <constraint firstAttribute="trailing" secondItem="dWU-gI-x4v" secondAttribute="trailing" id="Jc4-rE-UIr"/>
+                <constraint firstAttribute="bottom" secondItem="dWU-gI-x4v" secondAttribute="bottom" id="Mr3-WH-Bua"/>
+                <constraint firstItem="dWU-gI-x4v" firstAttribute="leading" secondItem="SBJ-fU-D6O" secondAttribute="leading" id="loX-m6-3Xk"/>
+            </constraints>
+            <connections>
+                <outlet property="titleLabel" destination="D0N-27-PVb" id="Ixl-cu-j4y"/>
+            </connections>
+            <point key="canvasLocation" x="-237" y="-83"/>
+        </collectionViewCell>
+    </objects>
+</document>
